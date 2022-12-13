@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href="style.css">
+
+  <title>Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <article class="rating-panel">
+
+      <picture class='cbtn'>
+        <img class="rating-panel__star" src="images/icon-star.svg" alt="">
+      </picture>
+
+      <h2 class="rating-panel__headline">
+        How did we do?
+      </h2>
+
+      <p class="rating-panel__text">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+
+      <div class="rating-panel__buttons">
+        <button class='rating-panel__btn' id='1'>1</button>
+        <button class='rating-panel__btn' id='2'>2</button>
+        <button class='rating-panel__btn' id='3'>3</button>
+        <button class='rating-panel__btn' id='4'>4</button>
+        <button class='rating-panel__btn' id='5'>5</button>
+      </div>
+
+      <button class='rating-panel__submit-btn'>Submit</button>
+
+    </article>
+
+
+    <article class='submitted-panel'>
+
+
+      <picture>
+        <img src='images/illustration-thank-you.svg' alt='success image'>
+      </picture>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+
+      <div class='submitted-panel__result--div'>
+        <p class='submitted-panel__result'>
+
+        </p>
+      </div>
+
+
+      <h1 class="submitted-panel__headline">
+        Thank you!
+      </h1>
+
+      <p class="submitted-panel__text">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+
+    </article>
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
